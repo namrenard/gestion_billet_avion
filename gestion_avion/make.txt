@@ -1,0 +1,13 @@
+CC= gcc
+
+gbavion : avion.o main.o
+	$(CC) -o gbavion main.o avion.o
+
+main.o : main.c avion.h
+	$(CC) -c main.c -o main.o
+
+avion.o : avion.c avion.h
+	$(CC) -c avion.c -o avion.o
+
+clean :
+    rm -f gbavion *.o 
