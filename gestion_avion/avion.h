@@ -1,7 +1,7 @@
 //avion.h
 
-#ifndef GESTION_AVION_AVION_H
-#define GESTION_AVION_AVION_H
+#ifndef _AVION_H
+#define _AVION_H
 
 struct billet_avion
 {
@@ -18,4 +18,4 @@ int dureeVol(billet v);
 void afficheVol(billet v);
 int dureeVol2(billet v, int *p);
 
-#endif //GESTION_AVION_AVION_H
+#endif 
